@@ -87,6 +87,7 @@ $a1 = $_POST['wat_hl'];
 $b1 = $_POST['zero_height_ref'];
 $c1 = $_POST['mas_tras_cof'];
 echo "$a1==$b1==$c1";
+echo "$a";
 ?>
 
             
