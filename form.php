@@ -1,7 +1,26 @@
 <script src="jquery-1.7.2.js" type="text/javascript" /></script>
 
 
-
+<form method="post" id="form1" >
+    <table>         
+    </table><br>
+    <table class="tab tab_Chemical" border="0">
+        <tr><th><label for="id_wat_hl">Water Column Half life (days):</label></th>
+            <td><input type="text" name="wat_hl" id="id_wat_hl" /></td></tr>
+    </table>
+    <table class="tab tab_Crop" border="0" style="display:none">
+        <tr><th><label for="id_zero_height_ref">Zero Height Reference:</label></th>
+            <td><input type="text" name="zero_height_ref" id="id_zero_height_ref" /></td></tr>    
+    </table>    
+    <table class="tab tab_Physical" border="0" style="display:none">
+        <tr><th><label for="id_mas_tras_cof">Mass Transfer Coefficient (m/s):</label></th>
+            <td><input type="text" name="mas_tras_cof" id="id_mas_tras_cof" /></td></tr>
+    </table>
+    <table align="center">
+        <tr><td><input class="back" type="button" value="Back" /></td>
+            <td><input class="next" type="button" value="Next" /></td>
+            <td><input class="submit" type="submit" value="Submit" /></td></tr>
+    </table></form>
 
 <script>
 $(document).ready(function () {
@@ -69,26 +88,7 @@ $b1 = $_POST['zero_height_ref'];
 $c1 = $_POST['mas_tras_cof'];
 echo "$a1==$b1==$c1";
 ?>
-<form method="post" id="form1" >
-    <table>         
-    </table><br>
-    <table class="tab tab_Chemical" border="0">
-        <tr><th><label for="id_wat_hl">Water Column Half life (days):</label></th>
-            <td><input type="text" name="wat_hl" id="id_wat_hl" /></td></tr>
-    </table>
-    <table class="tab tab_Crop" border="0" style="display:none">
-        <tr><th><label for="id_zero_height_ref">Zero Height Reference:</label></th>
-            <td><input type="text" name="zero_height_ref" id="id_zero_height_ref" /></td></tr>    
-    </table>    
-    <table class="tab tab_Physical" border="0" style="display:none">
-        <tr><th><label for="id_mas_tras_cof">Mass Transfer Coefficient (m/s):</label></th>
-            <td><input type="text" name="mas_tras_cof" id="id_mas_tras_cof" /></td></tr>
-    </table>
-    <table align="center">
-        <tr><td><input class="back" type="button" value="Back" /></td>
-            <td><input class="next" type="button" value="Next" /></td>
-            <td><input class="submit" type="submit" value="Submit" /></td></tr>
-    </table></form>
+
             
             
             
