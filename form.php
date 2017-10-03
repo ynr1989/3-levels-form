@@ -1,6 +1,8 @@
 <script src="jquery-1.7.2.js" type="text/javascript" /></script>
 
 
+
+
 <script>
 $(document).ready(function () {
     var tab_pool = ["tab_Chemical", "tab_Crop", "tab_Physical"];
@@ -66,7 +68,6 @@ $a1 = $_POST['wat_hl'];
 $b1 = $_POST['zero_height_ref'];
 $c1 = $_POST['mas_tras_cof'];
 echo "$a1==$b1==$c1";
-
 ?>
 <form method="post" id="form1" >
     <table>         
